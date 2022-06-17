@@ -1,10 +1,11 @@
 import React from "react";
+import Card from "./Card";
 
 function Results({ results }) {
   return (
     <div>
       {results.map((result) => {
-        return <h1 key={result.title}>{result.title}</h1>;
+        return <Card result={result} key={result.id} />;
       })}
     </div>
   );
