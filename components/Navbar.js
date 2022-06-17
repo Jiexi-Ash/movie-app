@@ -1,5 +1,5 @@
 import React from "react";
-import request from "../utils/request";
+import requests from "../utils/requests";
 import { useRouter } from "next/router";
 
 function Navbar() {
@@ -10,7 +10,7 @@ function Navbar() {
   };
   return (
     <div className="flex justify-center bg-gray-600 text-gray-200 select-none text-xl lg:text-2xl">
-      {Object.entries(request).map(([key, { title, url }]) => {
+      {Object.entries(requests).map(([key, { title, url }]) => {
         return (
           <h2
             className="m-6 cursor-pointer hover:text-white active:text-red-400"
